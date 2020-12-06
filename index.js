@@ -12,12 +12,12 @@ mondayWork("work from home");
 
 function wrapAdjective(flair="*"){
   return function(type="special"){
-    return (`You are ${flair}${type}${flair}!`)
+    return `You are ${flair}${type}${flair}!`;
   }
 }
 
 let Calculator={
-  Calculator,
+  
  add: function add(a, b){return (a+b);},
  subtract: function subtract(a, b){return (a-b);},
  multiply: function multiply(a, b){return (a*b);},
@@ -34,7 +34,6 @@ function actionApplyer(start, arr){
   else{
     
     let result = arr[2](arr[1]( arr[0](start)))
-      
     
     return (result)
   }
